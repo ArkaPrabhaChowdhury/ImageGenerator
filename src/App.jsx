@@ -11,7 +11,8 @@ function App() {
   const [result, setResult] = useState("");
   const [loader, setLoader] = useState(false);
   const configuration = new Configuration({
-    apiKey: import.meta.env.VITE_Open_AI_Key,
+    apiKey: import.meta.env.VITE_Open_AI_Key, 
+    //Enter your own OpenAI key here
   });
   const openai = new OpenAIApi(configuration);
 
